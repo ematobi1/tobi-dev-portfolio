@@ -1,123 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Emmanuel Tobi Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tobi Dev Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- Navigation Bar -->
-  <nav>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-    </ul>
-  </nav>
-
-  <div class="portfolio">
-
-    <!-- Hero Banner -->
-    <section id="home" class="hero">
-      <div class="hero-content">
-        <img src="./images/profile.jpg" alt="Emmanuel Tobi" class="profile-pic" id="profilePic">
-        <h1>Emmanuel Tobi</h1>
-        <p>Software Developer — Frontend & Backend</p>
-        <a href="./Emmanuel-Tobi-Resume.pdf" download class="resume-button">Download Resume</a>
-      </div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Explore my projects, skills, and more!</p>
+        <button>Contact Me</button>
     </section>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
     <!-- About Section -->
     <section id="about" class="about">
-      <h2>About Me</h2>
-      <p>
-        I'm a passionate Software Developer with expertise in frontend and backend technologies. I build clean, modern, and efficient applications.
-      </p>
-      <h3>Skills</h3>
-      <ul class="skills">
-        <li>JavaScript</li>
-        <li>Vue.js</li>
-        <li>Node.js</li>
-        <li>SCSS</li>
-        <li>TypeScript</li>
-        <li>Python</li>
-      </ul>
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/emmanuel-t-52a040118" target="_blank" rel="noopener" rel="noopener">LinkedIn</a>
-        <a href="https://github.com/ematobi1/Web-crm" target="_blank" rel="noopener" rel="noopener">GitHub</a>
-      </div>
-      <!-- File Upload Section -->
-      <div class="file-upload">
-        <label for="profilePicUpload">Upload your Profile Picture:</label>
-        <input type="file" id="profilePicUpload" accept="image/*">
-      </div>
+        <h2>About Me</h2>
+        <p>I am a passionate software developer with experience in building web applications. I enjoy creating intuitive user interfaces and seamless user experiences.</p>
     </section>
 
-    <!-- Projects Section -->
+    <!-- Project Section -->
     <section id="projects" class="projects">
-      <h2>Recent Projects</h2>
-      <div class="project-grid">
-
+        <h2>My Projects</h2>
         <div class="project-card">
-          <img src="./images/sustainabite.jpg" alt="SustainaBite">
-          <h3>SustainaBite</h3>
-          <p>Uniting Restaurants and Organizations to Combat Food Waste Together</p>
+            <img src="images/devhealth.jpg" alt="DevHealth Project">
+            <h3>DevHealth</h3>
+            <p>A health tracking application built with Vue.js.</p>
         </div>
-
         <div class="project-card">
-          <img src="./images/number-guess-game.jpg" alt="Number Guess Game">
-          <h3>Number Guess Game</h3>
-          <p>Web game where the player guesses what number the computer has picked.</p>
+            <img src="images/examlytics.jpg" alt="ExamLytics Project">
+            <h3>ExamLytics</h3>
+            <p>A tool to track academic performance, built with React.</p>
         </div>
-
         <div class="project-card">
-          <img src="./images/devhealth.jpg" alt="DevHealth">
-          <h3>DevHealth</h3>
-          <p>Revitalize your health with DevHealth - well-being for developers.</p>
+            <img src="images/number-guess-game.jpg" alt="Number Guess Game">
+            <h3>Number Guess Game</h3>
+            <p>A fun game built with JavaScript.</p>
         </div>
-
-        <div class="project-card">
-          <img src="./images/examlytics.jpg" alt="Examlytics">
-          <h3>Examlytics</h3>
-          <p>Transform your study experience with insights from Examlytics!</p>
-        </div>
-
-        <div class="project-card">
-          <img src="./images/kepler.jpg" alt="Kepler">
-          <h3>Kepler</h3>
-          <p>Generate stunning animated math video tutorials in seconds.</p>
-        </div>
-
-      </div>
     </section>
 
-    <!-- Video Demo Section -->
-    <section class="projects">
-      <h2>Portfolio Demo Video</h2>
-      <video controls width="80%">
-        <source src="./videos/portfolio-demo.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    </section>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Tobi Dev. All rights reserved.</p>
+        <p>Follow me on <a href="https://github.com/ematobi1" target="_blank">GitHub</a></p>
+    </footer>
 
-  </div>
-
-  <script>
-    const profilePicUpload = document.getElementById('profilePicUpload');
-    profilePicUpload.addEventListener('change', function(event) {
-      const file = event.target.files[0];
-      const reader = new FileReader();
-      reader.onload = function(e) {
-        document.getElementById('profilePic').src = e.target.result;
-      };
-      reader.readAsDataURL(file);
-    });
-  </script>
 </body>
 </html>
-<link rel="stylesheet" href="styles.css">
