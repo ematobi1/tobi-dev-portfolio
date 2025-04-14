@@ -1,0 +1,48 @@
+# Node.js dependencies
+/node_modules/
+
+# Build output
+/dist/
+/build/
+/vite/
+/.vite/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE config
+.vscode/
+.idea/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Misc
+*.log
+*.bak
+*.tmp
+
+# Parcel, Vite, Next.js cache
+.cache/
+.next/
+out/
+
+# OS metadata
+Icon?
+
+# Optional lock files
+/package-lock.json
+/pnpm-lock.yaml
+/yarn.lock
+
+# Coverage reports
+/coverage/

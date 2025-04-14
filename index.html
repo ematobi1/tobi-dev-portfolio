@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tobi Dev Portfolio</title>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-C1DQaSeB.css">
+</head>
+<body>
+
+<div id="particles-js"></div>
+
+<!-- Hero Section -->
+<section class="hero">
+  <h1>Welcome to Emmanuel Tobi Developer Portfolio</h1>
+  <p>Explore my projects, skills, and more!</p>
+  <button onclick="openModal()">Contact Me</button>
+</section>
+
+<!-- Navigation Bar -->
+<nav>
+  <a href="#about">About Me</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<!-- About Section -->
+<section id="about" class="about">
+  <h2>About Me - Tobi</h2>
+  <p>
+    I am a passionate software developer with frontend skills in Vue.js, React, JavaScript, HTML, CSS, and SCSS.
+    On the backend, I'm experienced with Node.js, Express, Python, and REST APIs.
+    I enjoy creating intuitive user interfaces and seamless, interactive user experiences.
+  </p>
+</section>
+
+<!-- Project Section -->
+<section id="projects" class="projects">
+  <h2>My Projects</h2>
+  <div class="project-card">
+    <img src="/assets/devhealth-BQEHqD5_.jpg" alt="DevHealth Project">
+    <h3>DevHealth</h3>
+    <p>A health tracking application built with Vue.js.</p>
+  </div>
+  <div class="project-card">
+    <img src="/assets/examlytics-DBggKyaS.jpg" alt="ExamLytics Project">
+    <h3>ExamLytics</h3>
+    <p>A tool to track academic performance, built with React.</p>
+  </div>
+  <div class="project-card">
+    <img src="/assets/number-guess-game-C9xJoF4V.jpg" alt="Number Guess Game">
+    <h3>Number Guess Game</h3>
+    <p>A fun game built with JavaScript.</p>
+  </div>
+</section>
+
+<!-- Contact Form Modal -->
+<div class="modal" id="contactModal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="4" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 Tobi Dev. All rights reserved.</p>
+  <p>
+    Follow me on 
+    <a href="https://github.com/ematobi1" target="_blank">GitHub</a> | 
+    <a href="https://www.linkedin.com/in/emmanuel-t-52a040118" target="_blank">LinkedIn</a>
+  </p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
