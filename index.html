@@ -6,244 +6,274 @@
   <title>Emmanuel Tobi Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
   <style>
     body {
       font-family: 'Poppins', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f9f9f9;
-      color: #333;
+      background-color: #9d88d4;
+      color: hsl(0, 20%, 95%);
     }
-
     .portfolio {
       display: flex;
       flex-direction: column;
       align-items: center;
       padding: 20px;
     }
-
     .hero {
-      background-image: url('/background.jpg');
+      background-image: url('./images/background.jpg');
       background-size: cover;
       background-position: center;
       text-align: center;
       padding: 100px 20px;
-      color: white;
+      color: rgb(24, 4, 4);
       width: 100%;
     }
-
     .hero-content {
       max-width: 600px;
       margin: 0 auto;
     }
-
     .profile-pic {
       border-radius: 50%;
       width: 150px;
       height: 150px;
       object-fit: cover;
     }
-
     .hero h1 {
       font-size: 3rem;
       margin: 20px 0;
     }
-
     .hero p {
       font-size: 1.2rem;
       margin: 10px 0;
     }
-
     .resume-button {
       padding: 10px 20px;
-      background-color: #007BFF;
-      color: white;
+      background-color: #9d88d4;
+      color: rgb(232, 218, 218);
       text-decoration: none;
       border-radius: 5px;
       font-size: 1rem;
       transition: background-color 0.3s;
     }
-
     .resume-button:hover {
-      background-color: #0056b3;
+      background-color: #041f34;
     }
-
     .about {
       margin-top: 50px;
       text-align: center;
     }
-
     .about h2 {
       font-size: 2rem;
     }
-
     .skills {
       list-style-type: none;
       padding: 0;
     }
-
     .skills li {
       display: inline-block;
       margin: 5px 10px;
-      background-color: #f0f0f0;
+      background-color: #000207;
       padding: 10px;
       border-radius: 25px;
     }
-
     .social-links {
       margin-top: 20px;
     }
-
     .social-links a {
       margin: 0 10px;
       text-decoration: none;
       color: #007BFF;
     }
-
     .projects {
       width: 100%;
       padding: 40px 0;
-      background-color: #f1f1f1;
+      background-color: #010205;
       text-align: center;
     }
-
     .projects h2 {
       font-size: 2rem;
       margin-bottom: 20px;
     }
-
     .project-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
       gap: 20px;
       padding: 20px;
     }
-
     .project-card {
-      background-color: #fff;
+      background-color: #00030f;
       border-radius: 10px;
       overflow: hidden;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       transition: transform 0.3s;
     }
-
     .project-card img {
       width: 100%;
       height: 200px;
       object-fit: cover;
     }
-
     .project-card h3 {
       font-size: 1.2rem;
       margin: 15px;
     }
-
     .project-card p {
       font-size: 1rem;
       margin: 0 15px 15px;
     }
-
     .project-card:hover {
       transform: translateY(-10px);
     }
-
     .file-upload {
       display: flex;
       flex-direction: column;
       align-items: center;
       margin-top: 20px;
     }
-
     .file-upload input {
       margin-bottom: 20px;
     }
-
+    nav {
+      background-color: #333;
+      padding: 1rem 2rem;
+    }
+    nav ul {
+      display: flex;
+      justify-content: space-around;
+      list-style: none;
+      padding: 0;
+    }
+    nav ul li {
+      font-size: 1.2rem;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover {
+      color: #FF6347;
+    }
+    .video-demo {
+      padding: 50px 20px;
+      background-color: #0e0e0e;
+      text-align: center;
+    }
+    .video-demo h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    .video-demo video {
+      max-width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
   </style>
 </head>
 <body>
-  <div class="portfolio">
-    <!-- Hero Banner -->
-    <section class="hero">
-      <div class="hero-content">
-        <img src="/your-profile-picture.jpg" alt="Emmanuel Tobi" class="profile-pic" id="profilePic">
-        <h1>Emmanuel Tobi</h1>
-        <p>Software Developer — Frontend & Backend</p>
-        <a href="/Emmanuel-Tobi-Resume.pdf" download class="resume-button">Download Resume</a>
+
+<!-- Navigation Bar -->
+<nav>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+  </ul>
+</nav>
+
+<div class="portfolio">
+
+  <!-- Hero Banner -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <img src="./images/profile.jpg" alt="Emmanuel Tobi" class="profile-pic" id="profilePic">
+      <h1>Emmanuel Tobi</h1>
+      <p>Software Developer — Frontend & Backend</p>
+      <a href="/Emmanuel-Tobi-Resume.pdf" download class="resume-button">Download Resume</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      I'm a passionate Software Developer with expertise in frontend and backend technologies. I build clean, modern, and efficient applications.
+    </p>
+    <h3>Skills</h3>
+    <ul class="skills">
+      <li>JavaScript</li>
+      <li>Vue.js</li>
+      <li>Node.js</li>
+      <li>SCSS</li>
+      <li>TypeScript</li>
+      <li>Python</li>
+    </ul>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/emmanuel-t-52a040118" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/ematobi1/Web-crm" target="_blank" rel="noopener">GitHub</a>
+    </div>
+    <div class="file-upload">
+      <label for="profilePicUpload">Upload your Profile Picture:</label>
+      <input type="file" id="profilePicUpload" accept="image/*">
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <h2>Recent Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="./images/sustainabite.jpg" alt="SustainaBite">
+        <h3>SustainaBite</h3>
+        <p>Uniting Restaurants and Organizations to Combat Food Waste Together</p>
       </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="about">
-      <h2>About Me</h2>
-      <p>
-        I'm a passionate Software Developer with expertise in frontend and backend technologies. I build clean, modern, and efficient applications.
-      </p>
-      <h3>Skills</h3>
-      <ul class="skills">
-        <li>JavaScript</li>
-        <li>Vue.js</li>
-        <li>Node.js</li>
-        <li>SCSS</li>
-        <li>TypeScript</li>
-        <li>Python</li>
-      </ul>
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/emmanuel-t-52a040118" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://github.com/ematobi1/Web-crm" target="_blank" rel="noopener">GitHub</a>
+      <div class="project-card">
+        <img src="./images/number-guess-game.jpg" alt="Number Guess Game">
+        <h3>Number Guess Game</h3>
+        <p>Web game where the player guesses what number the computer has picked.</p>
       </div>
-
-      <!-- File Upload Section for Profile Pic -->
-      <div class="file-upload">
-        <label for="profilePicUpload">Upload your Profile Picture:</label>
-        <input type="file" id="profilePicUpload" accept="image/*">
+      <div class="project-card">
+        <img src="./images/devhealth.jpg" alt="DevHealth">
+        <h3>DevHealth</h3>
+        <p>Revitalize your health with DevHealth - well-being for developers.</p>
       </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section class="projects">
-      <h2>Recent Projects</h2>
-      <div class="project-grid">
-        <div class="project-card">
-          <img src="/sustainabite.jpg" alt="SustainaBite" id="sustainaBiteImage">
-          <h3>SustainaBite</h3>
-          <p>Uniting Restaurants and Organizations to Combat Food Waste Together</p>
-        </div>
-        <div class="project-card">
-          <img src="/number-guess-game.jpg" alt="Number Guess Game" id="numberGuessGameImage">
-          <h3>Number Guess Game</h3>
-          <p>Web game where the player guesses what number the computer has picked.</p>
-        </div>
-        <div class="project-card">
-          <img src="/devhealth.jpg" alt="DevHealth" id="devHealthImage">
-          <h3>DevHealth</h3>
-          <p>Revitalize your health with DevHealth - well-being for developers.</p>
-        </div>
-        <div class="project-card">
-          <img src="/examlytics.jpg" alt="Examlytics" id="examlyticsImage">
-          <h3>Examlytics</h3>
-          <p>Transform your study experience with insights from Examlytics!</p>
-        </div>
-        <div class="project-card">
-          <img src="/kepler.jpg" alt="Kepler" id="keplerImage">
-          <h3>Kepler</h3>
-          <p>Generate stunning animated math video tutorials in seconds.</p>
-        </div>
+      <div class="project-card">
+        <img src="./images/examlytics.jpg" alt="Examlytics">
+        <h3>Examlytics</h3>
+        <p>Transform your study experience with insights from Examlytics!</p>
       </div>
-    </section>
-  </div>
+      <div class="project-card">
+        <img src="./images/kepler.jpg" alt="Kepler">
+        <h3>Kepler</h3>
+        <p>Generate stunning animated math video tutorials in seconds.</p>
+      </div>
+    </div>
+  </section>
 
-  <script>
-    const profilePicUpload = document.getElementById('profilePicUpload');
-    profilePicUpload.addEventListener('change', function(event) {
-      const file = event.target.files[0];
-      const reader = new FileReader();
+  <!-- Video Demo Section -->
+  <section class="video-demo">
+    <h2>Portfolio Video Demo</h2>
+    <video controls>
+      <source src="./videos/portfolio-demo.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
 
-      reader.onload = function(e) {
-        document.getElementById('profilePic').src = e.target.result;
-      };
-      reader.readAsDataURL(file);
-    });
-  </script>
+</div>
+
+<script>
+  const profilePicUpload = document.getElementById('profilePicUpload');
+  profilePicUpload.addEventListener('change', function(event) {
+    const file = event.target.files[0];
+    const reader = new FileReader();
+    reader.onload = function(e) {
+      document.getElementById('profilePic').src = e.target.result;
+    };
+    reader.readAsDataURL(file);
+  });
+</script>
+
 </body>
 </html>
-<!-- End of index.html -->
