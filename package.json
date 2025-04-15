@@ -1,10 +1,12 @@
 {
-  "name": "tobi-dev-portfolio",
-  "version": "1.0.0",
   "scripts": {
     "start": "your-start-command",
+    "dev": "vite",
+    "build": "vite build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
-  "dependencies": {}
+  "devDependencies": {
+    "vite": "^6.2.6"
+  }
 }
