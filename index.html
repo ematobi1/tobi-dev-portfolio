@@ -4,333 +4,56 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tobi Dev Portfolio</title>
-  <style>
-    body, html {
-      margin: 0;
-      padding: 0;
-      font-family: 'Arial', sans-serif;
-      background-color: #000;
-      overflow-x: hidden;
-      color: #fff;
-    }
-
-    /* Matrix Canvas */
-    #matrix-canvas {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-      background-color: black;
-    }
-
-    /* Profile Picture */
-    .profile-picture {
-      position: absolute;
-      top: 120px;
-      right: 120px;
-      width: 120px;
-      height: 120px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 3px solid #3498db;
-      box-shadow: 0 0 10px #3498db;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .profile-picture:hover {
-      transform: scale(1.08);
-      box-shadow: 0 0 20px #29b9b4;
-    }
-
-    /* Hero Section */
-    .hero {
-      text-align: center;
-      padding: 60px 20px;
-    }
-    .hero h2 {
-      font-size: 3em;
-      margin-bottom: 10px;
-    }
-    .hero p {
-      font-size: 1.2em;
-      margin-bottom: 20px;
-    }
-    .hero button {
-      padding: 12px 24px;
-      font-size: 1.2em;
-      background: #3498db;
-      color: #fff;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-    .hero button:hover {
-      background: #29b9b4;
-    }
-
-    /* Navigation */
-    nav {
-      text-align: center;
-      margin: 20px 0;
-    }
-    nav a {
-      color: #3498db;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-    }
-
-    /* Skills Section */
-    .skills {
-      text-align: center;
-      padding: 20px;
-    }
-    .skills h3 {
-      margin-bottom: 15px;
-    }
-    .skills ul {
-      list-style: none;
-      padding: 0;
-      max-width: 800px;
-      margin: 0 auto;
-      line-height: 1.8;
-    }
-
-    /* Projects Section */
-    .projects {
-      text-align: center;
-      padding: 50px 20px;
-    }
-    .projects h3 {
-      margin-bottom: 30px;
-      font-size: 2em;
-    }
-    .project-card {
-      display: inline-block;
-      background: #111;
-      margin: 15px;
-      border-radius: 10px;
-      overflow: hidden;
-      width: 280px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.7);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .project-card img {
-      width: 100%;
-      display: block;
-      height: 180px;
-      object-fit: cover;
-      transition: transform 0.3s ease, filter 0.3s ease;
-    }
-    .project-card:hover {
-      transform: scale(1.05);
-      box-shadow: 0 6px 20px rgba(0,0,0,0.9);
-    }
-    .project-card:hover img {
-      transform: scale(1.05);
-      filter: brightness(1.2);
-    }
-    .project-card h3 {
-      margin: 15px 0 10px;
-      font-size: 1.4em;
-    }
-    .project-card p {
-      padding: 0 15px 20px;
-      font-size: 0.95em;
-      color: #ccc;
-    }
-
-    /* Contact Section */
-    #contact {
-      padding: 50px 20px;
-      text-align: center;
-      background-color: #0f0f0f;
-    }
-    #contact h2 {
-      font-size: 2em;
-      margin-bottom: 20px;
-    }
-    #contact form {
-      max-width: 600px;
-      margin: 0 auto;
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-    #contact input, #contact textarea {
-      padding: 12px;
-      font-size: 1em;
-      border-radius: 5px;
-      border: 1px solid #333;
-      background: #222;
-      color: #fff;
-    }
-    #contact button {
-      padding: 14px 20px;
-      font-size: 1.2em;
-      background-color: #3498db;
-      color: #fff;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
-    #contact button:hover {
-      background-color: #29b9b4;
-    }
-
-    /* Footer */
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #070707;
-      margin-top: 50px;
-      font-size: 0.9em;
-    }
-    footer a {
-      color: #3498db;
-      text-decoration: none;
-    }
-  </style>
-  <link rel="stylesheet" crossorigin href="/assets/index-seoFgM9E.css">
+  <link rel="stylesheet" crossorigin href="/assets/index-CFLY44vQ.css">
 </head>
 <body>
-  <!-- Matrix Canvas -->
-  <canvas id="matrix-canvas"></canvas>
+  <div id="particles-js"></div>
 
-  <!-- Profile Picture -->
-  <img src="/assets/tobi-profile-CWUsh-QI.jpg" alt="Emmanuel Tobi Profile" class="profile-picture">
-
-  <!-- Hero Section -->
   <section class="hero">
-    <h2>Welcome to Emmanuel Tobi Developer Portfolio</h2>
+    <h1>Welcome to Emmanuel Tobi Developer Portfolio</h1>
     <p>Explore my projects, skills, and more!</p>
-    <button onclick="window.location.href='#contact'">Contact Me</button>
+    <button>Contact Me</button>
   </section>
 
-  <!-- Navigation -->
   <nav>
     <a href="#about">About Me</a>
-    <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
   </nav>
 
-  <!-- About Section -->
   <section id="about" class="about">
-    <h1>About Me - Tobi</h1>
+    <h2>About Me - Tobi</h2>
     <p>I am a passionate software developer with experience in building web applications.</p>
   </section>
 
-  <!-- Skills Section -->
-  <section id="skills" class="skills">
-    <h3>Skills</h3>
-    <ul>
-      <li>JavaScript (ES6+), TypeScript, Python, HTML5, CSS3 / SCSS</li>
-      <li>Vue.js, React, Vite, Node.js, Bootstrap, Tailwind CSS</li>
-      <li>Git, GitHub, VS Code, Netlify, Vercel, NPM / Yarn, Figma</li>
-      <li>Responsive Design, REST API Integration, SPA Development, Authentication</li>
-      <li>AWS (S3), Netlify, GitHub Pages, Vercel</li>
-      <li>Problem Solving, Debugging, Agile Collaboration, UI/UX Awareness</li>
-    </ul>
-  </section>
-
-  <!-- Projects Section -->
   <section id="projects" class="projects">
-    <h3>My Projects</h3>
+    <h2>My Projects</h2>
     <div class="project-card">
-      <img src="/assets/project1-C9xJoF4V.jpg" alt="Project 1">
+      <img src="images/devhealth.jpg" alt="DevHealth Project">
       <h3>DevHealth</h3>
       <p>A health tracking application built with Vue.js.</p>
     </div>
     <div class="project-card">
-      <img src="/assets/project2-BQEHqD5_.jpg" alt="Project 2">
+      <img src="images/examlytics.jpg" alt="ExamLytics Project">
       <h3>ExamLytics</h3>
       <p>A tool to track academic performance, built with React.</p>
     </div>
     <div class="project-card">
-      <img src="/assets/project3-DBggKyaS.jpg" alt="Project 3">
+      <img src="images/number-guess-game.jpg" alt="Number Guess Game">
       <h3>Number Guess Game</h3>
       <p>A fun game built with JavaScript.</p>
     </div>
   </section>
 
-  <!-- Contact Form Section -->
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
-
-  <!-- Footer -->
   <footer>
     <p>&copy; 2025 Tobi Dev. All rights reserved.</p>
     <p>Follow me on <a href="https://github.com/ematobi1" target="_blank">GitHub</a></p>
     <p>Connect with me on <a href="https://www.linkedin.com/in/emmanuel-t-52a040118" target="_blank">LinkedIn</a></p>
   </footer>
 
-  <!-- Matrix Effect Script -->
-  <script>
-    const canvas = document.getElementById('matrix-canvas');
-    const ctx = canvas.getContext('2d');
-
-    canvas.height = window.innerHeight;
-    canvas.width = window.innerWidth;
-
-    const matrixCharacters = 'abcdefghijklmnopqrstuvwxyz0123456789';
-    const characters = matrixCharacters.split('');
-
-    const fontSize = 18;
-    const columns = Math.floor(canvas.width / fontSize);
-    const drops = Array(columns).fill(1);
-
-    let colorMode = 'rainbow';
-
-    function getRainbowColor(i) {
-      const frequency = 0.3;
-      const r = Math.floor(Math.sin(frequency * i + 0) * 127 + 128);
-      const g = Math.floor(Math.sin(frequency * i + 2) * 127 + 128);
-      const b = Math.floor(Math.sin(frequency * i + 4) * 127 + 128);
-      return `rgb(${r},${g},${b})`;
-    }
-
-    function draw() {
-      ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
-      ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-      ctx.font = fontSize + 'px monospace';
-
-      for (let i = 0; i < drops.length; i++) {
-        const text = characters[Math.floor(Math.random() * characters.length)];
-        ctx.fillStyle = colorMode === 'rainbow' ? getRainbowColor(i * 3) : '#0F0';
-        ctx.fillText(text, i * fontSize, drops[i] * fontSize);
-
-        if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
-          drops[i] = 0;
-        }
-        drops[i]++;
-      }
-    }
-
-    setInterval(draw, 33);
-
-    // Switch color mode every 6 seconds
-    setInterval(() => {
-      colorMode = colorMode === 'rainbow' ? 'green' : 'rainbow';
-    }, 6000);
-
-    // Adjust on resize
-    window.addEventListener("resize", () => {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
-    });
-  </script>
+  <!-- particles.js library from CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <!-- Custom particles config -->
+  <script src="assets/script.js"></script>
 </body>
 </html>
