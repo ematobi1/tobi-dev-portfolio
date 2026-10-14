@@ -1,8 +1,11 @@
 {
+  "name": "tobi-dev-portfolio",
+  "private": true,
+  "type": "module",
   "scripts": {
-    "start": "your-start-command",
     "dev": "vite",
     "build": "vite build",
+    "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
